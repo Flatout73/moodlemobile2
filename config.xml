@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.moodle.moodlemobile" version="3.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Moodle</name>
-    <description>Moodle official app</description>
-    <author email="mobile@moodle.com" href="http://moodle.com">Moodle Mobile team</author>
+<widget id="ru.hse.moodle" version="3.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Онлайн образование НИУ ВШЭ</name>
+    <description>Онлайн образование НИУ ВШЭ</description>
+    <author email="sasha26141@nextmail.ru" href="http://hse.ru">НИУ ВШЭ</author>
     <content src="index.html" />
     <access origin="*" />
     <access launch-external="yes" origin="tel:*" />
@@ -130,6 +130,6 @@
     <plugin name="cordova-android-support-gradle-release" spec="^1.4.4">
         <variable name="ANDROID_SUPPORT_VERSION" value="27.1.0" />
     </plugin>
-    <engine name="android" spec="7.0.0" />
-    <engine name="ios" spec="4.5.4" />
+    <plugin name="cordova-plugin-ios-keychain" spec="https://github.com/Flatout73/cordova-plugin-ios-keychain" />
+    <engine name="ios" spec="4.5.5" />
 </widget>
