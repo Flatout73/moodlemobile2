@@ -133,4 +133,5 @@
     <plugin name="cordova-plugin-ios-keychain" spec="https://github.com/Flatout73/cordova-plugin-ios-keychain" />
     <plugin name="com.xunholy.cordova.deviceaccounts" spec="git+https://github.com/Flatout73/cordova-device-accounts.git" />
     <engine name="ios" spec="4.5.5" />
+    <plugin name="com.xunholy.cordova.deviceaccounts" spec="https://github.com/Flatout73/cordova-device-accounts" />
 </widget>
