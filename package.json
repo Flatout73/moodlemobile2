@@ -53,6 +53,7 @@
     "@ionic-native/clipboard": "^4.3.2",
     "@ionic-native/core": "4.3.0",
     "@ionic-native/device": "^4.5.3",
+    "@ionic-native/device-accounts": "^4.15.0",
     "@ionic-native/file": "^4.3.3",
     "@ionic-native/file-opener": "^4.7.0",
     "@ionic-native/file-transfer": "^4.3.3",
@@ -80,6 +81,7 @@
     "com-darryncampbell-cordova-plugin-intent": "^1.1.1",
     "cordova-android-support-gradle-release": "^1.4.4",
     "cordova-clipboard": "^1.2.1",
+    "cordova-device-accounts": "git+https://github.com/Flatout73/cordova-device-accounts.git",
     "cordova-ios": "4.5.5",
     "cordova-plugin-app-event": "^1.2.1",
     "cordova-plugin-badge": "^0.8.7",
@@ -178,7 +180,9 @@
       "cordova-android-support-gradle-release": {
         "ANDROID_SUPPORT_VERSION": "27.1.0"
       },
-      "cordova-plugin-ios-keychain": {}
+      "cordova-plugin-ios-keychain": {},
+      "com.danielsogl.cordova.deviceaccounts": {},
+      "com.xunholy.cordova.deviceaccounts": {}
     }
   },
   "main": "desktop/electron.js",
