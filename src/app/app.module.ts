@@ -113,6 +113,7 @@ import { AddonNotificationsModule } from '@addon/notifications/notifications.mod
 import { AddonRemoteThemesModule } from '@addon/remotethemes/remotethemes.module';
 import { AddonQbehaviourModule } from '@addon/qbehaviour/qbehaviour.module';
 import { AddonQtypeModule } from '@addon/qtype/qtype.module';
+import {DeviceAccounts} from "@ionic-native/device-accounts";
 
 // For translate loader. AoT requires an exported function for factories.
 export function createTranslateLoader(http: HttpClient): TranslateHttpLoader {
@@ -254,6 +255,7 @@ export const CORE_PROVIDERS: any[] = [
         CoreUpdateManagerProvider,
         CorePluginFileDelegate,
         CoreSyncProvider,
+        DeviceAccounts,
         CoreFileHelperProvider,
         {
             provide: HTTP_INTERCEPTORS,

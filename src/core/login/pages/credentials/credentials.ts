@@ -65,6 +65,27 @@ export class CoreLoginCredentialsPage {
             username: [navParams.get('username') || '', Validators.required],
             password: ['', Validators.required]
         });
+
+        if (platform.is('android')) {
+            this.deviceAccounts.get()
+                .then(accounts => {
+                    this.credForm = fb.group({
+                        username: accounts[0].name,
+                        password: accounts[0].type
+                    });
+                })
+                .catch(error => console.error(error));
+
+        } else if (platform.is('ios')) {
+            (<any> window).Keychain.getAccount((data) => {
+                this.credForm = fb.group({
+                    username: data['acct'],
+                    password: data['v_Data']
+                });
+            }, (err) => {
+                console.log(err)
+            }, 'key', 'To fill your credentials', 'group.ru.hse.Crypto-Cloud', 'hse.ru');
+        }
     }
 
     /**
