@@ -41,12 +41,14 @@ export class MoodleMobileApp implements OnInit {
         platform.ready().then(() => {
             // Okay, so the platform is ready and our plugins are available.
             // Here you can do any higher level native things you might need.
-            if (platform.is('android')) {
-                statusBar.styleLightContent();
-            } else {
+            // if (platform.is('android')) {
+            //     statusBar.styleLightContent();
+            // } else {
                 statusBar.styleDefault();
-            }
+         //   }
 
+            statusBar.overlaysWebView(false);
+            statusBar.backgroundColorByHexString("#003399");
             keyboard.hideKeyboardAccessoryBar(false);
         });
 
