@@ -51,13 +51,9 @@
     "@ionic-native/badge": "^4.5.3",
     "@ionic-native/camera": "^4.5.2",
     "@ionic-native/clipboard": "^4.3.2",
-    "@ionic-native/core": "^4.15.0",
+    "@ionic-native/core": "^4.18.0",
     "@ionic-native/device": "^4.5.3",
-<<<<<<< HEAD
-    "@ionic-native/device-accounts": "^4.18.0",
-=======
     "@ionic-native/device-accounts": "^4.15.0",
->>>>>>> 244d3586f... Design updated
     "@ionic-native/file": "^4.3.3",
     "@ionic-native/file-opener": "^4.7.0",
     "@ionic-native/file-transfer": "^4.3.3",
@@ -82,50 +78,44 @@
     "@types/node": "^8.0.47",
     "@types/promise.prototype.finally": "^2.0.2",
     "chart.js": "^2.7.2",
+    "com-darryncampbell-cordova-plugin-intent": "~1.0.2",
     "cordova-android": "7.0.0",
-<<<<<<< HEAD
+    "cordova-android-support-gradle-release": "^1.4.4",
+    "cordova-clipboard": "~1.1.0",
     "cordova-device-accounts": "git+https://github.com/Flatout73/cordova-device-accounts.git",
     "cordova-ios": "4.5.4",
-=======
-    "cordova-ios": "4.5.5",
->>>>>>> 244d3586f... Design updated
+    "cordova-plugin-badge": "~0.8.7",
+    "cordova-plugin-camera": "~2.4.1",
+    "cordova-plugin-console": "~1.0.0",
+    "cordova-plugin-customurlscheme": "~4.3.0",
+    "cordova-plugin-device": "~1.1.6",
+    "cordova-plugin-file": "~4.3.3",
+    "cordova-plugin-file-opener2": "~2.0.19",
+    "cordova-plugin-file-transfer": "~1.6.3",
+    "cordova-plugin-globalization": "~1.0.7",
+    "cordova-plugin-inappbrowser": "~1.7.1",
+    "cordova-plugin-local-notifications-mm": "~1.0.10",
+    "cordova-plugin-media-capture": "~1.4.3",
+    "cordova-plugin-network-information": "~1.3.3",
+    "cordova-plugin-splashscreen": "~4.0.3",
+    "cordova-plugin-statusbar": "~2.2.3",
+    "cordova-plugin-whitelist": "~1.3.2",
+    "cordova-plugin-zip": "~3.1.0",
+    "cordova-sqlite-evcore-extbuild-free": "~0.9.7",
+    "cordova-universal-clipboard": "~0.1.0",
     "font-awesome": "4.7.0",
     "ionic-angular": "^3.9.2",
+    "ionic-plugin-keyboard": "~2.2.1",
     "ionicons": "3.0.0",
     "jszip": "^3.1.4",
     "moment": "^2.19.1",
+    "nl.kingsquare.cordova.background-audio": "~1.0.1",
+    "phonegap-plugin-push": "~1.9.2",
     "promise.prototype.finally": "^3.0.1",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
     "ts-md5": "^1.2.2",
-    "zone.js": "0.8.26",
-    "cordova-plugin-file": "~4.3.3",
-    "cordova-plugin-file-transfer": "~1.6.3",
-    "cordova-plugin-console": "~1.0.0",
-    "cordova-plugin-camera": "~2.4.1",
-    "cordova-plugin-media-capture": "~1.4.3",
-    "cordova-plugin-device": "~1.1.6",
-    "cordova-plugin-globalization": "~1.0.7",
-    "cordova-plugin-inappbrowser": "~1.7.1",
-    "cordova-plugin-network-information": "~1.3.3",
-    "cordova-plugin-statusbar": "~2.2.3",
-    "cordova-plugin-whitelist": "~1.3.2",
-    "cordova-plugin-splashscreen": "~4.0.3",
-    "cordova-universal-clipboard": "~0.1.0",
-    "nl.kingsquare.cordova.background-audio": "~1.0.1",
-    "phonegap-plugin-push": "~1.9.2",
-    "cordova-plugin-customurlscheme": "~4.3.0",
-    "ionic-plugin-keyboard": "~2.2.1",
-    "cordova-plugin-zip": "~3.1.0",
-    "cordova-plugin-local-notifications-mm": "~1.0.10",
-    "cordova-clipboard": "~1.1.0",
-    "cordova-plugin-file-opener2": "~2.0.19",
-    "com-darryncampbell-cordova-plugin-intent": "~1.0.2",
-    "cordova-sqlite-evcore-extbuild-free": "~0.9.7",
-    "cordova-plugin-badge": "~0.8.7",
-    "cordova-plugin-ios-keychain": "~3.0.1",
-    "cordova-android-support-gradle-release": "^1.4.4",
-    "com.xunholy.cordova.deviceaccounts": "~1.0.0"
+    "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.9",
@@ -152,9 +142,6 @@
       "ios"
     ],
     "plugins": {
-<<<<<<< HEAD
-      "com.danielsogl.cordova.deviceaccounts": {}
-=======
       "cordova-plugin-file": {},
       "cordova-plugin-file-transfer": {},
       "cordova-plugin-console": {},
@@ -193,12 +180,9 @@
       "com-darryncampbell-cordova-plugin-intent": {},
       "cordova-sqlite-evcore-extbuild-free": {},
       "cordova-plugin-badge": {},
-      "cordova-plugin-ios-keychain": {},
       "cordova-android-support-gradle-release": {
         "ANDROID_SUPPORT_VERSION": "27.1.0"
-      },
-      "com.xunholy.cordova.deviceaccounts": {}
->>>>>>> 244d3586f... Design updated
+      }
     }
   },
   "main": "desktop/electron.js",
