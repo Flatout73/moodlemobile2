@@ -48,7 +48,7 @@ export class MoodleMobileApp implements OnInit {
          //   }
 
             statusBar.overlaysWebView(false);
-            statusBar.backgroundColorByHexString("#003399");
+            statusBar.backgroundColorByHexString('#003399');
             keyboard.hideKeyboardAccessoryBar(false);
         });
 

@@ -24,7 +24,6 @@ import { CoreLoginHelperProvider } from '../../providers/helper';
 import { CoreContentLinksDelegate } from '@core/contentlinks/providers/delegate';
 import { CoreContentLinksHelperProvider } from '@core/contentlinks/providers/helper';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { DeviceAccounts } from '@ionic-native/device-accounts';
 
 /**
  * Page to enter the user credentials.
@@ -57,7 +56,7 @@ export class CoreLoginCredentialsPage {
             private sitesProvider: CoreSitesProvider, private loginHelper: CoreLoginHelperProvider,
             private domUtils: CoreDomUtilsProvider, private translate: TranslateService, private utils: CoreUtilsProvider,
             private eventsProvider: CoreEventsProvider, private contentLinksDelegate: CoreContentLinksDelegate,
-            private contentLinksHelper: CoreContentLinksHelperProvider, private deviceAccounts: DeviceAccounts) {
+            private contentLinksHelper: CoreContentLinksHelperProvider) {
 
         this.siteUrl = navParams.get('siteUrl');
         this.siteConfig = navParams.get('siteConfig');
@@ -68,26 +67,26 @@ export class CoreLoginCredentialsPage {
             password: ['', Validators.required]
         });
 
-        if (platform.is('android')) {
-            this.deviceAccounts.get()
-                .then(accounts => {
-                    this.credForm = fb.group({
-                        username: accounts[0].name,
-                        password: accounts[0].type
-                    });
-                })
-                .catch(error => console.error(error));
-
-        } else if (platform.is('ios')) {
-            (<any> window).Keychain.getAccount((data) => {
-                this.credForm = fb.group({
-                    username: data['acct'],
-                    password: data['v_Data']
-                });
-            }, (err) => {
-                console.log(err)
-            }, 'key', 'To fill your credentials', 'group.ru.hse.Crypto-Cloud', 'hse.ru');
-        }
+        // if (platform.is('android')) {
+        //     this.deviceAccounts.get()
+        //         .then(accounts => {
+        //             this.credForm = fb.group({
+        //                 username: accounts[0].name,
+        //                 password: accounts[0].type
+        //             });
+        //         })
+        //         .catch(error => console.error(error));
+        //
+        // } else if (platform.is('ios')) {
+        //     (<any> window).Keychain.getAccount((data) => {
+        //         this.credForm = fb.group({
+        //             username: data['acct'],
+        //             password: data['v_Data']
+        //         });
+        //     }, (err) => {
+        //         console.log(err);
+        //     }, 'key', 'To fill your credentials', 'group.ru.hse.Crypto-Cloud', 'hse.ru');
+        // }
     }
 
     /**
