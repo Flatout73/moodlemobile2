@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="ru.hse.moodle" version="3.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ru.hse.moodlemobile" version="3.5.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Курс ИБ</name>
     <description>Курс ИБ</description>
     <author email="sasha26141@nextmail.ru" href="http://hse.ru">НИУ ВШЭ</author>
