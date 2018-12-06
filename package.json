@@ -48,6 +48,7 @@
     "@angular/http": "5.2.10",
     "@angular/platform-browser": "5.2.10",
     "@angular/platform-browser-dynamic": "5.2.10",
+    "@ionic-native/app-preferences": "^4.18.0",
     "@ionic-native/badge": "^4.5.3",
     "@ionic-native/camera": "^4.5.2",
     "@ionic-native/clipboard": "^4.3.2",
@@ -182,7 +183,8 @@
       "cordova-plugin-badge": {},
       "cordova-android-support-gradle-release": {
         "ANDROID_SUPPORT_VERSION": "27.1.0"
-      }
+      },
+      "cordova-plugin-app-preferences": {}
     }
   },
   "main": "desktop/electron.js",

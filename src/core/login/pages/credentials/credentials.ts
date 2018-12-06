@@ -67,6 +67,7 @@ export class CoreLoginCredentialsPage {
             password: ['', Validators.required]
         });
 
+        console.log('Hello Alex');
         // if (platform.is('android')) {
         //     this.deviceAccounts.get()
         //         .then(accounts => {

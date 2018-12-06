@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="ru.hse.moodlemobile" version="3.5.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Онлайн образование НИУ ВШЭ</name>
-    <description>Онлайн образование НИУ ВШЭ</description>
+    <name>Курс ИБ</name>
+    <description>Курс ИБ</description>
     <author email="sasha26141@nextmail.ru" href="http://hse.ru">НИУ ВШЭ</author>
     <content src="index.html" />
     <access origin="*" />
@@ -131,6 +131,7 @@
     <plugin name="cordova-android-support-gradle-release" spec="^1.4.4">
         <variable name="ANDROID_SUPPORT_VERSION" value="27.1.0" />
     </plugin>
+    <plugin name="cordova-plugin-app-preferences" spec="~0.99.3" />
     <engine name="android" spec="7.0.0" />
     <engine name="ios" spec="4.5.4" />
 </widget>
