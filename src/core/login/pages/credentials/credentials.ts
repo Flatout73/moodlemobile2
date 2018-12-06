@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { CoreAppProvider } from '@providers/app';
 import { CoreEventsProvider } from '@providers/events';
@@ -24,6 +24,7 @@ import { CoreLoginHelperProvider } from '../../providers/helper';
 import { CoreContentLinksDelegate } from '@core/contentlinks/providers/delegate';
 import { CoreContentLinksHelperProvider } from '@core/contentlinks/providers/helper';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { DeviceAccounts } from '@ionic-native/device-accounts';
 
 /**
  * Page to enter the user credentials.
@@ -51,11 +52,12 @@ export class CoreLoginCredentialsPage {
     protected siteId: string;
     protected urlToOpen: string;
 
-    constructor(private navCtrl: NavController, navParams: NavParams, fb: FormBuilder, private appProvider: CoreAppProvider,
+    constructor(private platform: Platform, private navCtrl: NavController, navParams: NavParams, fb: FormBuilder,
+                private appProvider: CoreAppProvider,
             private sitesProvider: CoreSitesProvider, private loginHelper: CoreLoginHelperProvider,
             private domUtils: CoreDomUtilsProvider, private translate: TranslateService, private utils: CoreUtilsProvider,
             private eventsProvider: CoreEventsProvider, private contentLinksDelegate: CoreContentLinksDelegate,
-            private contentLinksHelper: CoreContentLinksHelperProvider) {
+            private contentLinksHelper: CoreContentLinksHelperProvider, private deviceAccounts: DeviceAccounts) {
 
         this.siteUrl = navParams.get('siteUrl');
         this.siteConfig = navParams.get('siteConfig');
