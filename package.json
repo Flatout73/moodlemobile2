@@ -81,12 +81,11 @@
     "com-darryncampbell-cordova-plugin-intent": "~1.0.2",
     "cordova-android": "7.0.0",
     "cordova-android-support-gradle-release": "^1.4.4",
-    "cordova-clipboard": "~1.1.0",
+    "cordova-clipboard": "^1.2.1",
     "cordova-device-accounts": "git+https://github.com/loicknuchel/cordova-device-accounts.git",
-    "cordova-ios": "4.5.5",
+    "cordova-ios": "^4.5.0",
     "cordova-plugin-badge": "~0.8.7",
     "cordova-plugin-camera": "~2.4.1",
-    "cordova-plugin-console": "~1.0.0",
     "cordova-plugin-customurlscheme": "~4.3.0",
     "cordova-plugin-device": "~1.1.6",
     "cordova-plugin-file": "~4.3.3",
@@ -111,6 +110,7 @@
     "jszip": "^3.1.4",
     "moment": "^2.19.1",
     "nl.kingsquare.cordova.background-audio": "~1.0.1",
+    "org.loicknuchel.cordova.deviceaccounts": "git+https://github.com/loicknuchel/cordova-device-accounts.git",
     "phonegap-plugin-push": "~1.9.2",
     "promise.prototype.finally": "^3.0.1",
     "rxjs": "5.5.11",
@@ -142,7 +142,6 @@
     "plugins": {
       "cordova-plugin-file": {},
       "cordova-plugin-file-transfer": {},
-      "cordova-plugin-console": {},
       "cordova-plugin-camera": {
         "CAMERA_USAGE_DESCRIPTION": " ",
         "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
@@ -173,7 +172,6 @@
       "ionic-plugin-keyboard": {},
       "cordova-plugin-zip": {},
       "cordova-plugin-local-notifications-mm": {},
-      "cordova-clipboard": {},
       "cordova-plugin-file-opener2": {},
       "com-darryncampbell-cordova-plugin-intent": {},
       "cordova-sqlite-evcore-extbuild-free": {},
@@ -182,7 +180,8 @@
       "cordova-android-support-gradle-release": {
         "ANDROID_SUPPORT_VERSION": "27.1.0"
       },
-      "org.loicknuchel.cordova.deviceaccounts": {}
+      "org.loicknuchel.cordova.deviceaccounts": {},
+      "cordova-clipboard": {}
     }
   },
   "main": "desktop/electron.js",

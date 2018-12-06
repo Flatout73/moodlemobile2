@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 import { TranslateService } from '@ngx-translate/core';
 import { CoreAppProvider } from '@providers/app';
 import { CoreEventsProvider } from '@providers/events';
@@ -24,7 +24,6 @@ import { CoreLoginHelperProvider } from '../../providers/helper';
 import { CoreContentLinksDelegate } from '@core/contentlinks/providers/delegate';
 import { CoreContentLinksHelperProvider } from '@core/contentlinks/providers/helper';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Platform } from 'ionic-angular';
 import { DeviceAccounts } from '@ionic-native/device-accounts';
 
 /**
@@ -76,7 +75,7 @@ export class CoreLoginCredentialsPage {
                         password: accounts[0].type
                     });
                 })
-                .catch(error => console.error(error));
+                .catch(error => console.log(error));
 
         } else if (platform.is('ios')) {
             (<any> window).Keychain.getAccount((data) => {
@@ -85,7 +84,7 @@ export class CoreLoginCredentialsPage {
                     password: data['v_Data']
                 });
             }, (err) => {
-                console.log(err)
+                console.log(err);
             }, 'key', 'To fill your credentials', 'group.ru.hse.Crypto-Cloud', 'hse.ru');
         }
     }
